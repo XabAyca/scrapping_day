@@ -3,8 +3,9 @@ require 'pry'
 require 'rspec'
 require 'nokogiri' 
 require 'open-uri'
+
 ################### Récupère l'url et fait une variable générale #####################
-$page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))   
+$page = Nokogiri::HTML(URI.open("https://coinmarketcap.com/all/views/all/"))   
 
 ################## Récupère le nom des cryptos ###################
 def array_crypto_name()
