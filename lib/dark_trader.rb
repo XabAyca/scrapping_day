@@ -27,7 +27,4 @@ def array_hash
   return new_array
 end
 
-
-
-
-
+array_hash()

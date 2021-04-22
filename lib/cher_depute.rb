@@ -50,9 +50,9 @@ def array_hash_depute(email_array, array_first_name, array_last_name)
   return array_depute
 end
 
-# array_url_mail = get_mail_url(page)
-# email_array = get_email(array_url_mail)
-# array_name = get_depute_name(page)
-# array_first_name = get_depute_first_name(array_name)
-# array_last_name = get_depute_last_name(array_name)
-# array_hash_depute(email_array, array_first_name, array_last_name)
+array_url_mail = get_mail_url(page)
+email_array = get_email(array_url_mail)
+array_name = get_depute_name(page)
+array_first_name = get_depute_first_name(array_name)
+array_last_name = get_depute_last_name(array_name)
+array_hash_depute(email_array, array_first_name, array_last_name)

@@ -4,7 +4,6 @@ require 'rubocop'
 require 'pry'
 require 'rspec'
 
-
 page = Nokogiri::HTML(URI.open("https://www.annuaire-des-mairies.com/val-d-oise.html"))   
 
 def get_townhall_email(url_array)
@@ -28,11 +27,11 @@ end
 def array_hash_town_mail(name_array, email_array)
   new_array=[]
   name_array.size.times {|i| new_array<<Hash[name_array[i],email_array[i]]}
-  #puts new_array <==== pour afficher le résultat
+  puts new_array  # <==== pour afficher le résultat
   return new_array
 end
 
-# url_array= get_townhall_url(page)
-# name_array= get_townhall_name(page)
-# email_array= get_townhall_email(url_array)
-# array_hash_town_mail(name_array, email_array)
+url_array= get_townhall_url(page)
+name_array= get_townhall_name(page)
+email_array= get_townhall_email(url_array)
+array_hash_town_mail(name_array, email_array)
